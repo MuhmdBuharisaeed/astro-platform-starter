@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pi dApp Launch Service – Policy | ALBUKHR</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+.section{padding:16px}
+.card{
+  background:#fff;
+  border-radius:14px;
+  padding:16px;
+  margin-bottom:14px
+}
+.toggle{
+  display:flex;
+  gap:8px;
+  margin-bottom:12px
+}
+.toggle button{
+  padding:8px 12px;
+  border:none;
+  border-radius:8px;
+  font-weight:700;
+  cursor:pointer;
+  background:#eee
+}
+.toggle button.active{
+  background:#0f7a3d;
+  color:#fff
+}
+.policy{
+  font-size:13px;
+  line-height:1.8;
+  color:#333
+}
+.policy h4{
+  margin-top:14px;
+  font-size:14px
+}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+  <h1 class="brand">ALBUKHR</h1>
+</header>
+
+<section class="section">
+
+<h3>📜 Pi dApp Launch Service – Policy & Terms</h3>
+
+<div class="toggle">
+  <button id="btnEn" class="active" onclick="showLang('en')">English</button>
+  <button id="btnHa" onclick="showLang('ha')">Hausa</button>
+</div>
+
+<!-- ENGLISH -->
+<div id="policy-en" class="card policy">
+
+<h4>1. Introduction</h4>
+Albukhr Pi dApp Launch Service is designed to assist individuals and teams
+to create and launch Pi Network decentralized applications (dApps)
+under their own ownership.
+
+<h4>2. Scope of Service</h4>
+Albukhr provides guidance, technical assistance, and optional developer support.
+Albukhr does not own, control, or manage user dApps.
+
+<h4>3. Ownership & Responsibility</h4>
+All dApps created remain the full responsibility and ownership of the user.
+Albukhr bears no liability for misuse, legal violations, or losses.
+
+<h4>4. Payment & Fees</h4>
+Service fees are charged strictly for technical assistance and support.
+Payments are non-refundable once work has commenced.
+
+<h4>5. Approval & Rejection</h4>
+Albukhr reserves the right to approve or reject any request
+without obligation to provide reasons.
+
+<h4>6. Code Delivery & Support</h4>
+Eligible users may receive code snippets, templates, or instructions.
+Users are responsible for implementation unless otherwise agreed.
+
+<h4>7. Termination & Misuse</h4>
+Any attempt to misuse Albukhr services for fraud, scams, or illegal activities
+will result in immediate termination.
+
+<h4>8. Disclaimer</h4>
+Albukhr is not affiliated with Pi Network Core Team.
+This service is independent and community-driven.
+
+<h4>9. Acceptance of Terms</h4>
+By submitting a request, you confirm that you have read,
+understood, and accepted these terms.
+</div>
+
+<!-- HAUSA -->
+<div id="policy-ha" class="card policy" style="display:none">
+
+<h4>1. Gabatarwa</h4>
+Aikin Albukhr Pi dApp Launch Service an kirkireshi ne domin taimaka wa mutane
+su samar da manhajojin Pi Network (dApps) a karkashin ikon su.
+
+<h4>2. Iyakar Aikinmu</h4>
+Albukhr tana bayar da shawara, taimakon fasaha, da jagoranci.
+Ba mallakar Albukhr ba ne app ɗin da aka samar.
+
+<h4>3. Mallaka da Alhaki</h4>
+Mai app shi ne cikakken mai alhaki da mai mallaka.
+Albukhr ba za ta ɗauki alhakin duk wata matsala ba.
+
+<h4>4. Kudin Aiki</h4>
+Ana karɓar kudi ne domin aikin fasaha kawai.
+Da zarar an fara aiki, ba a mayar da kudi.
+
+<h4>5. Amincewa ko ƙin Amincewa</h4>
+Albukhr na da ikon karɓa ko ƙin karɓar kowanne request
+ba tare da bayani ba.
+
+<h4>6. Bayar da Code da Taimako</h4>
+Za a iya bai wa wanda aka amince da shi code ko jagora.
+Aiwan da code alhakin mai app ne.
+
+<h4>7. Hana Amfani da Aiki ba daidai ba</h4>
+Duk wanda aka samu yana amfani da aikin wajen damfara
+za a dakatar da shi kai tsaye.
+
+<h4>8. Bayanin Kariyar Kai</h4>
+Albukhr ba ta da alaka da Pi Network Core Team.
+Wannan aiki na al'umma ne.
+
+<h4>9. Amincewa da Ka'idoji</h4>
+Da zarar ka tura request, kana nuna cewa
+ka karanta kuma ka amince da wannan doka.
+</div>
+
+</section>
+
+<script>
+function showLang(lang){
+  document.getElementById("policy-en").style.display =
+    lang === "en" ? "block" : "none";
+  document.getElementById("policy-ha").style.display =
+    lang === "ha" ? "block" : "none";
+
+  document.getElementById("btnEn").classList.toggle("active", lang==="en");
+  document.getElementById("btnHa").classList.toggle("active", lang==="ha");
+}
+</script>
+
+</body>
+</html>
